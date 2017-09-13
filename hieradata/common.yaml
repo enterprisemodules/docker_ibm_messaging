@@ -1,0 +1,20 @@
+---
+
+profile::base::hosts::list:
+  master.example.com:
+    ip: 192.168.253.10
+    host_aliases:
+      - master
+      - puppet
+  mqiib01.example.com:
+    ip: 192.168.253.32
+    host_aliases:
+      - mqiib01
+
+software_location: &software_location   /etc/puppetlabs/code/modules/software/files
+
+mq_install::software::version:           9.0.0.0
+mq_install::software::source_location:   *software_location
+
+profile::installiib::source_location:   *software_location
+profile::installiib::version:           10.0.0.9

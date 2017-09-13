@@ -1,0 +1,7 @@
+modules/software/
+**/.DS_Store
+/modules/mq_config
+.DS_Store
+/modules/em_license/files/Universal.entitlements
+/modules/em_license/.DS_Store
+.byebug_history

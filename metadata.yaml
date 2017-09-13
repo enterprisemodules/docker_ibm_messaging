@@ -1,0 +1,10 @@
+---
+cmd: nginx
+expose: 80
+image_name: enterprisemodules/ibm-messaging
+r10k_yaml: true   # We need the r10k yaml
+from:  centos:7
+module_path: modules
+# no_cache: true
+maintainer: Enterprise Modules B.V.
+squash: true
